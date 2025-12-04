@@ -29,7 +29,7 @@ class AuthService {
                 <h1>Hola ${name}</h1>
                 <p>Verifica tu correo electrónico:</p>
                 <a href='${ENVIRONMENT.URL_API_BACKEND}/api/auth/verify-email/${verification_token}'>Verificar email</a>
-                <a href='${ENVIRONMENT.URL_FRONTEND}'>Login</a>
+                
             `
                 
         });
@@ -101,7 +101,7 @@ class AuthService {
       html: `
         <h1>Hola ${user.name}</h1>
         <p>Para restablecer tu contraseña, haz clic en el siguiente enlace:</p>
-        <a href="${ENVIRONMENT.URL_FRONTEND}/reset-password/${recovery_token}">
+        <a href="${ENVIRONMENT.URL_API_BACKEND}/reset-password/${recovery_token}">
           Restablecer contraseña
         </a>
         <p>Este enlace expira en 15 minutos.</p>

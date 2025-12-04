@@ -25,7 +25,7 @@ app.use('/api/auth', auth_router)
 app.use('/api/members', member_router)
 app.use("/api/slots", slotRoutes);
 app.use("/api/business-hours", businessHourRoutes);
-app.use("/api/business-hours", businessHourRoutes);
+
 
 app.listen(8080, () => {
     console.log("Esto está funcionando")
