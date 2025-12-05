@@ -62,7 +62,7 @@ class AuthController {
         try{
             const {verification_token} = request.params
             await AuthService.verifyEmail(verification_token)
-            return response.redirect(ENVIRONMENT.URL_FRONTEND + '/login')
+            return response.redirect(ENVIRONMENT.URL_API_BACKEND)
         } 
         catch (error) {
             console.log(error)
